@@ -1,13 +1,13 @@
 if (Todos.find().count() === 0) {
   Todos.insert({
-    title: 'Go to the market',
-    completed: false,
+    task: 'Go to the market',
+    status: 'Pending',
     notes: 'I need to go to market and buy the list on my paper'
   });
 
   Todos.insert({
-    title: 'Pick my daughter',
-    completed: false,
+    task: 'Pick my daughter',
+    status: 'Done',
     notes: 'Will pick my daughter from school at 2:00 PM'
   });
 }
