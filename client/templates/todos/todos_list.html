@@ -1,0 +1,18 @@
+<template name="todosList">
+  <div class="todos">
+    <table class="table table-hover">
+      <thead class="titles">
+        <tr class="table-head">
+          <th>Title</th>
+          <th>Notes</th>
+          <th>Completed</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each todos}}
+          {{> todoItem}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</template>

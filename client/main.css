@@ -1,1 +1,4 @@
 /* CSS declarations go here */
+.table-head th {
+  color: red;
+}
