@@ -2,3 +2,8 @@
 .table-head th {
   color: red;
 }
+
+.access-denied {
+  color: darkred;
+  background-color: pink;
+}
