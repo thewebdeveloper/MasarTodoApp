@@ -12,11 +12,11 @@
     </div>
 
     <div class="collapse navbar-collapse" id="navigation">
-
-      <ul class="nav navbar-nav">
-        <li><a href="{{pathFor 'todoSubmit'}}">Submit Todo</a></li>
-      </ul>
-
+      {{#if currentUser}}
+        <ul class="nav navbar-nav">
+          <li><a href="{{pathFor 'todoSubmit'}}">Submit Todo</a></li>
+        </ul>
+      {{/if}}
       <ul class="nav navbar-nav navbar-right">
         {{> loginButtons}}
       </ul>
