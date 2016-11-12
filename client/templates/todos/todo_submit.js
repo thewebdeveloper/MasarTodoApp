@@ -8,7 +8,12 @@ Template.todoSubmit.events({
       status: e.target[2].value
     };
 
-    todo._id = Todos.insert(todo);
-    Router.go('todoPage', todo);
+    Meteor.call('todoInsert', todo, function(error, result) {
+      if (error)
+        return alert(error.reason);
+
+      // the second argument takes us to the todoPage which is just created, by adding the id
+      Router.go('todoPage', {_id: result._id});
+    });
   }
 });
